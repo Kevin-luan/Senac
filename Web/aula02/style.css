@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #ffc0cb; /* rosa claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.CorpoDoCartao {
+    text-align: center;
+    border: 5px solid #ff002b; 
+    border-radius: 25px;
+    padding: 40px 30px;
+    background-color: #ffe4e1; 
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #ff1493; 
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.p1 p {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #8f00ee; 
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.img img {
+    max-width: 100%;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 3px solid #ff1493;
+}
+
+.assinatura p {
+    margin-top: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+.assinatura a {
+    color: red;
+    text-decoration: none;
+    font-style: italic;
+}
+
