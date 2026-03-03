@@ -1,0 +1,8 @@
+1. Escreva um programa que ajuda os alunos a calcularem as notas desta disciplina. O programa deve perguntar as notas da primeira e da segunda prova, calcular a média aritmética entre elas, e exibir na tela.
+2. Escreva um algoritmo para calcular o consumo médio de um automóvel (medido em km/l), dado que são conhecidos a distância total percorrida e o volume de combustível consumido para percorrê-la (medido em litros).
+3. Em uma festa, homens pagam 20 reais de entrada e as mulheres pagam 17. Crie um programa que pergunta quantos homens e quantas mulheres participaram da festa e calcula o valor total arrecadado com as entradas.
+4. Crie um programa que calcula o volume de um cilindro, solicitando que o usuário digite apenas a medida do raio e a altura do mesmo.
+5. Fazer um algoritmo para ler os valores dos coeficientes A, B e C de uma equação quadrática. Calcular e imprimir o valor do discriminante (delta). Delta = B²– 4AC.
+6. Escreva um programa que solicita um número e então exibe 0 se o número for par, e 1 se o número for ímpar. (Não utilize o comando IF ainda).
+7. Peça ao usuário para digitar uma temperatura em graus Celsius e, em seguida, exiba a temperatura equivalente em graus Fahrenheit.
+8. Peça ao usuário para digitar três números float e, em seguida, calcule e exiba a média aritmética desses números.

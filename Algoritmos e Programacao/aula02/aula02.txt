@@ -1,0 +1,11 @@
+1 - Escreva um programa que exibe a mensagem:
+Bom dia! Estou aprendendo a programar Definitivamente não é "muito" difícil
+
+2 - Escreva um programa que exibe na tela a seguinte mensagem:
+Suas notas são ___ e ____ e sua média é ____ (substituindo a parte sublinhada por três valores, sendo que o último é calculado).
+
+3 - Escreva um programa que realiza este cálculo e exibe o valor correto com a mensagem na tela:
+Vamos distribuir 359 carros para 4 pessoas e portanto devem sobrar ___ carros.
+
+4 - Exiba as seguintes mensagens na tela, fazendo os cálculos necessários pelo programa:
+Eu tenho um círculo de raio 5. Portanto o diâmetro é ___ , a área é ___ e a medida da circunferência é ___
