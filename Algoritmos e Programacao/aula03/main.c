@@ -31,23 +31,106 @@ void lucroFesta(){
 }
 void volumeDoCilindro(){
 
+                     //Declaracao de varioaveis
        float volumeCilindro,raio,altura, pi=3.14;
        // volume= pi* raio*raio * altura
 
+
+                     //Entrada
        printf("Didite a medida do raio: ");
        scanf("%f", &raio);
        printf("Digite a altura: ");
        scanf("%f", &altura);
+                     // Processamento
+       volumeCilindro = pi* (raio * raio) * altura ;
+                     // Saida
+       printf("o volume do cilindro e :%f", volumeCilindro);
 
-       volumeCilindro = pi* (raio * raio) * altura;
+}
+void valoresDoCoeficientes(){
+       // Declaracao de variaveis
+       float delta,b,a,c ;
+       // Entrada de dados
+       printf("Digite o valor de B: ");
+       scanf("%f", &b);
 
-       printf("o volume do cilinfro e :%f", volumeCilindro);
+       printf("Digite o valor de A: ");
+       scanf("%f", &
+             a);
 
+       printf("Digite o valor de c: ");
+       scanf("%f", &c);
 
+       //Precessamento de dados
+       delta= (b*b) -4*a*c;
+
+       //saida
+       printf("Delta:%f ", delta );
+
+}
+void imparPar(){
+   // Declaracao de variaveis
+   int numDigitado,res;
+   //entrada de dados
+   printf("Digite o numero: ");
+   scanf("%d", &numDigitado);
+
+   //Processamento
+   res = numDigitado % 2 ;
+
+  //Saida
+  if(res==0){
+       printf("O numero:%d e Par", numDigitado);
+  }else{
+   printf("O numero:%d e Impar", numDigitado);
+  }
 
 
 
 }
+void fahrenheit(){
+
+
+              //Declaracao de variveis
+              float temperatura,temperaturaFahrenheit;
+
+              //Entrada de dados
+              printf("Digite a temperatura: ");
+              scanf("%f", &temperatura);
+
+       //Processamento
+       temperaturaFahrenheit = (temperatura *1.8)+32;
+
+       //Saida
+       printf(" A temperatura em fahrenheit e : %f", temperaturaFahrenheit);
+
+
+
+}
+void mediaAritmetica(){
+//Declaracaod e variaveis
+              float n1,n2,n3,res;
+
+              //Entrada de dados
+              printf("Digite o numero 1: ");
+              scanf("%f", &n1);
+
+               printf("Digite o numero 2: ");
+              scanf("%f", &n2);
+
+               printf("Digite o numero 3: ");
+              scanf("%f", &n3);
+
+              //Processamento
+
+             res= (n1+n2+n3) / 3;
+
+              //saida
+
+              printf("A media e :%f ", res);
+}
+
+
 
 
 int main()
@@ -55,8 +138,11 @@ int main()
    //calculoDaMedia();
   // automovel();
   //lucroFesta();
-  volumeDoCilindro();
-
+  //volumeDoCilindro();
+  //valoresDoCoeficientes();
+  //imparPar();
+ // fahrenheit();
+ mediaAritmetica();
 
     return 0;
 }
