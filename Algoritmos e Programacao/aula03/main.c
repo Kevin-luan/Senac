@@ -142,7 +142,7 @@ int main()
   //valoresDoCoeficientes();
   //imparPar();
  // fahrenheit();
- mediaAritmetica();
+// mediaAritmetica();
 
     return 0;
 }
