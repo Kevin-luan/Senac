@@ -10,7 +10,7 @@ int c = rand()% 10;
 
 if(a+b>c && a+c>b && b+c>a )
 {
-    printf("E uim triangolo valido\n");
+    printf("E um triangolo valido\n");
 
     // triangolo Equilatero 
 
