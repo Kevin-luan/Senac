@@ -1,0 +1,28 @@
+Sexta Lista
+1 - Escreva um programa que exibe qualquer tabuada completa. O programa deve perguntar ao usuário qual tabuada ele deseja visualizar, que irá responder digitando um número de 1 a 10.
+
+2 - Escreva um programa que exibe o quadrado de todos os números de 1 a 20.
+Ex:
+1 - 1
+2 - 4
+3 - 9
+4 - 16
+...
+20 - 400
+
+3 - Escreva um programa que solicita 5 números ao usuário, e para cada número digitado, informa se este é par ou ímpar.
+
+4 - Escreva um programa que solicita 10 números e ao final exibe a soma de todos eles.
+
+5 - Escreva um programa que exibe a soma dos números de 1 a 100
+
+6 - Escreva um programa que solicita um número ao usuário, e então exibe todos os seus divisores.
+Ex: Se informado 12, deve exibir:
+12
+6
+4
+3
+2
+1
+
+7 - Solicite que o usuário digite um número entre 10 e 20. Se for digitado um numero inválido, peça novamente, até que ele digite um número correto.
