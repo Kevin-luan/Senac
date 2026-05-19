@@ -1,0 +1,17 @@
+Sétima Lista
+1 - Solicite um número e então diga se este é um número perfeito.
+
+2a - (já pode ter sido feito anteriormente) Adivinhe o número - Crie um programa que solicita um número ao usuário entre 1 e 10, sorteia um outro número dentro desta faixa de valores, e então diz se os dois números são iguais.
+2b - Faça um aprimoramento do programa anterior. Desta vez, seu programa deverá dar dicas, dizendo se o numero sorteado é maior ou menor, e permitir um novo palpite do usuário, ATÉ ELE ACERTAR. Mostrar quantas tentativas foram efetuadas (ele não irá sortear o número novamente).
+
+3 - Criar um algoritmo que imprima a soma dos números pares entre 25 e 200.
+4 - Escreva um programa que solicita a idade de 5 atletas. Ao final da entrada de dados, informe a idade do atleta mais velho.
+
+5.1 - Escreva um programa que solicita o código (um número inteiro) e a idade de 5 atletas. Ao final da entrada de dados, informe O CÓDIGO do atleta mais velho.
+5.2 - Informe também a idade média destes 5 atletas.
+5.3 - Não restrinja a entrada de dados a apenas 5 atletas. Agora após a inclusão de cada atleta o programa deve perguntar ao usuário se deseja incluir outro. A resposta é dada com 1 - Sim e 2 - Não. O programa continua mostrando o código do mais velho, e a idade média.
+
+6 - Solicite que seja digitado um número que seja par e maior que 200 e múltiplo de 4.
+
+Desafio Jedi Master Advanced
+7 - Elabore um programa que solicita um número e então diz se este número é primo.
