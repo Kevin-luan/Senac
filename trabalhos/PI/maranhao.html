@@ -4,137 +4,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maranhão</title>
+  <title>Maranhao</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
 
   <link rel="stylesheet" href="maranhao.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<header class="header">
+  <img src="icon/icon.ico" alt="Descrição do Ícone" width="90" height="80">
 
-<header>
-  <h1>Maranao</h1>
 
-  <nav class="navegacao">
-    <ul>
+  <nav>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#login">Login</a></li>
       <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#comidas">Comidas</a></li>
-      <li><a href="#turismo">Turismo</a></li>
     </ul>
   </nav>
 </header>
 
+<body>
 
 
-  <section id="sobre">
-    <div class="card">
-      <h2>Sobre o Maranhão</h2>
 
-      <p>
-        O Maranhão é um estado da região Nordeste do Brasil,
-        conhecido por suas belas paisagens, rica cultura e festas tradicionais.
-      </p>
 
-      <div class="carrossel">
-        <div class="fotos">
 
-          <img src="img/lencois01.avif" alt="">
-          <img src="img/lencois02.avif" alt="">
-          <img src="img/lencois03.avif" alt="">
-          <img src="img/lencois04.avif" alt="">
+  <div class="container py-4">
+    <div class="row g-4">
+
+      <!-- carrosel para as img dos lecois maranheses  -->
+      <div class="col-md-6 col-lg-3">
+        <div class="car-card">
+
+          <div id="lecoisMaranheses" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="img/lencoisMaranhao/lencois01.avif">
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/lencoisMaranhao/lencois02.avif">
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/lencoisMaranhao/lencois03.avif">
+              </div>
+
+            </div>
+
+            <!-- SETAS -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaFerrari"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLaFerrari"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+
+          </div>
+
+          <div class="car-title">Lecois Maranheses</div>
         </div>
       </div>
 
 
-    </div>
-  </section>
+      <!-- Comidas -->
+      <div class="col-md-6 col-lg-3">
+        <div class="car-card">
 
+          <div id="comidas" class="carousel slide" data-bs-ride="carousel">
 
+            <div class="carousel-inner">
 
+              <div class="carousel-item active">
+                <img src="img/ComidaMaranhao/arroxDeCuxa.webp">
+              </div>
 
+              <div class="carousel-item">
+                <img src="img/ComidaMaranhao/camaraoGigante.jpg">
+              </div>
 
+              <div class="carousel-item">
+                <img src="img/ComidaMaranhao/camraoNaMoranga.webp">
+              </div>
 
+            </div>
 
+            <!-- SETAS -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPuroSangue"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
 
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPuroSangue"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
 
+          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!---
- 
-
-
-
-  <section id="comidas">
-    <div class="card">
-
-      <h2>Comidas Típicas</h2>
-
-      <h3>Arroz de Cuxá</h3>
-      <p>
-        Prato típico maranhense feito com vinagreira, camarão seco e temperos regionais.
-      </p>
-
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Arroz_de_cuxa.jpg" alt="Arroz de Cuxá">
-
-      <h3>Peixada Maranhense</h3>
-      <p>
-        Receita tradicional preparada com peixe e legumes.
-      </p>
-
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Peixada.jpg" alt="Peixada Maranhense">
+          <div class="car-title">Comidas tipicas </div>
+        </div>
+      </div>
 
     </div>
-  </section>
 
-  <section id="turismo">
-    <div class="card">
+    
 
-      <h2>Pontos Turísticos</h2>
 
-      <h3>Lençóis Maranhenses</h3>
-      <p>
-        Famoso parque nacional com dunas e lagoas cristalinas.
-      </p>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Lencois_Maranhenses.jpg" alt="Lençóis Maranhenses">
-
-      <h3>Centro Histórico de São Luís</h3>
-      <p>
-        Região histórica com casarões coloniais e azulejos portugueses.
-      </p>
-
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Sao_Luis_Maranhao.jpg" alt="São Luís">
-
-    </div>
-  </section>
-
-  <footer>
-    <p>Site sobre o Maranhão</p>
-  </footer>
-
------------>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="maranhao.js"></script>
 
 </html>
