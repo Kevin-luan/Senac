@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project FileHandleId="0a9435b5-49fb-40b1-b5a0-fe7b6943f9f1" source="2.7.2" version="1.0">
+<project FileHandleId="60a4ef4c-e847-43fe-b8a5-f31bf945792b" source="2.7.2" version="1.0">
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0"/>
   <lib desc="#Gates" name="1"/>
@@ -75,12 +75,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(250,80)" to="(260,80)"/>
     <wire from="(120,160)" to="(160,160)"/>
     <wire from="(70,70)" to="(170,70)"/>
-    <comp lib="0" loc="(120,50)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
     <comp lib="1" loc="(250,80)" name="XOR Gate">
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(150,190)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(230,140)" name="Pin">
       <a name="facing" val="west"/>
@@ -100,6 +99,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(70,50)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(120,50)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
   </circuit>
   <circuit name="Somador">
@@ -194,11 +197,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(160,140)" to="(170,140)"/>
     <wire from="(70,210)" to="(80,210)"/>
     <wire from="(70,100)" to="(140,100)"/>
-    <comp lib="0" loc="(70,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp loc="(200,180)" name="Somador"/>
     <comp lib="0" loc="(70,180)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A1"/>
@@ -231,6 +229,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(110,150)" name="Ground"/>
     <comp loc="(200,120)" name="Somador"/>
+    <comp lib="0" loc="(70,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+    </comp>
+    <comp loc="(200,180)" name="Somador"/>
   </circuit>
   <circuit name="MeioSubtrator">
     <a name="circuit" val="MeioSubtrator"/>
@@ -312,12 +315,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(220,110)" to="(240,110)"/>
     <wire from="(240,60)" to="(240,110)"/>
     <wire from="(210,190)" to="(290,190)"/>
-    <comp lib="0" loc="(400,150)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="BO.o"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(110,180)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="BO.i"/>
@@ -341,6 +338,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A"/>
     </comp>
     <comp loc="(210,180)" name="MeioSubtrator"/>
+    <comp lib="0" loc="(400,150)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="BO.o"/>
+      <a name="labelloc" val="east"/>
+    </comp>
   </circuit>
   <circuit name="Subtrator2Bits">
     <a name="circuit" val="Subtrator2Bits"/>
@@ -377,6 +380,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(60,60)" to="(70,60)"/>
     <wire from="(100,50)" to="(110,50)"/>
     <wire from="(70,140)" to="(80,140)"/>
+    <comp lib="0" loc="(40,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+    </comp>
     <comp loc="(110,140)" name="Subtrator"/>
     <comp lib="0" loc="(50,120)" name="Pin">
       <a name="tristate" val="false"/>
@@ -409,10 +416,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(50,150)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B1"/>
-    </comp>
-    <comp lib="0" loc="(40,70)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
     </comp>
   </circuit>
   <circuit name="multiplicador2Bitis">
@@ -530,6 +533,122 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="1" loc="(330,70)" name="AND Gate">
       <a name="inputs" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="Mux2-1">
+    <a name="circuit" val="Mux2-1"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(130,160)" to="(160,160)"/>
+    <wire from="(210,140)" to="(240,140)"/>
+    <wire from="(240,110)" to="(270,110)"/>
+    <wire from="(240,70)" to="(270,70)"/>
+    <wire from="(320,90)" to="(340,90)"/>
+    <wire from="(70,90)" to="(70,100)"/>
+    <wire from="(70,100)" to="(90,100)"/>
+    <wire from="(130,70)" to="(150,70)"/>
+    <wire from="(90,100)" to="(90,120)"/>
+    <wire from="(130,140)" to="(130,160)"/>
+    <wire from="(60,90)" to="(70,90)"/>
+    <wire from="(240,50)" to="(240,70)"/>
+    <wire from="(90,70)" to="(100,70)"/>
+    <wire from="(60,140)" to="(130,140)"/>
+    <wire from="(200,50)" to="(240,50)"/>
+    <wire from="(90,120)" to="(160,120)"/>
+    <wire from="(50,30)" to="(150,30)"/>
+    <wire from="(240,110)" to="(240,140)"/>
+    <wire from="(90,70)" to="(90,100)"/>
+    <comp lib="1" loc="(210,140)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(320,90)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(130,70)" name="NOT Gate"/>
+    <comp lib="0" loc="(60,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Sub"/>
+    </comp>
+    <comp lib="0" loc="(50,30)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Soma"/>
+    </comp>
+    <comp lib="0" loc="(340,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(200,50)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Seletor"/>
+    </comp>
+  </circuit>
+  <circuit name="Mux4-1">
+    <a name="circuit" val="Mux4-1"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(60,60)" to="(120,60)"/>
+    <wire from="(240,140)" to="(300,140)"/>
+    <wire from="(120,210)" to="(120,220)"/>
+    <wire from="(110,100)" to="(110,110)"/>
+    <wire from="(330,140)" to="(380,140)"/>
+    <wire from="(60,100)" to="(110,100)"/>
+    <wire from="(70,220)" to="(120,220)"/>
+    <wire from="(110,110)" to="(160,110)"/>
+    <wire from="(130,170)" to="(130,190)"/>
+    <wire from="(120,210)" to="(160,210)"/>
+    <wire from="(120,90)" to="(160,90)"/>
+    <wire from="(280,100)" to="(280,130)"/>
+    <wire from="(120,60)" to="(120,90)"/>
+    <wire from="(130,190)" to="(160,190)"/>
+    <wire from="(120,140)" to="(150,140)"/>
+    <wire from="(190,100)" to="(280,100)"/>
+    <wire from="(190,200)" to="(280,200)"/>
+    <wire from="(280,150)" to="(300,150)"/>
+    <wire from="(280,130)" to="(300,130)"/>
+    <wire from="(150,100)" to="(150,140)"/>
+    <wire from="(150,100)" to="(160,100)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(280,150)" to="(280,200)"/>
+    <wire from="(60,170)" to="(130,170)"/>
+    <wire from="(150,140)" to="(150,200)"/>
+    <comp lib="0" loc="(70,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Div"/>
+    </comp>
+    <comp lib="0" loc="(240,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Seletor2"/>
+    </comp>
+    <comp loc="(190,100)" name="Mux2-1"/>
+    <comp lib="0" loc="(380,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(190,200)" name="Mux2-1"/>
+    <comp lib="0" loc="(60,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Soma"/>
+    </comp>
+    <comp lib="0" loc="(60,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Mult"/>
+    </comp>
+    <comp loc="(330,140)" name="Mux2-1"/>
+    <comp lib="0" loc="(60,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Sub"/>
+    </comp>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Seletor"/>
     </comp>
   </circuit>
 </project>
