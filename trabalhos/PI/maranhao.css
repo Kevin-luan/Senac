@@ -1,87 +1,294 @@
-
-
-body {
-  background: rgb(245, 222, 179) !important;
-  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-canvas {
-  display: block;
-  margin: 0 auto;
+.body{
+  background: rgb(64, 224, 208);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  color: rgb(70,70,70);
 }
 
+/* HEADER */
 
-.header {
+.header{
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 18px 40px;
+
   background: rgb(64, 224, 208);
-  padding: 15px 30px;
-    font-size: 28px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.header img{
+  width: 90px;
+  height: 80px;
+  object-fit: contain;
 }
 
-.logo {
-  color:rgb(255, 165, 0);
-  font-family: 'MinhaGrafite', sans-serif;
-    font-size: 58px;
-}
-
-.menu li a {
-  text-decoration: none;
- background-color: bisque;
-  color: white;
-  transition: 0.3s;
-  border-radius: 25px;
-  padding: 15px 30px;
-}
-
-.menu li a:hover {
+.logo{
   color: rgb(255, 165, 0);
+  font-family: 'MinhaGrafite', sans-serif;
+  font-size: clamp(35px, 6vw, 58px);
 }
 
-.car-card {
-   
-   background: rgb(255, 255, 255);
+/* MENU */
 
-  border-radius: 20px;
+.menu{
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.menu li a{
+  text-decoration: none;
+
+  background: bisque;
+
+  color: rgb(70,70,70);
+
+  padding: 12px 24px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.menu li a:hover{
+  transform: translateY(-3px);
+
+  color: rgb(255, 165, 0);
+
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+/* SOBRE */
+
+.sobre{
+  width: 92%;
+  max-width: 1400px;
+
+  margin: 50px auto;
+
+  padding: 45px;
+
+  background: white;
+
+  border-radius: 35px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITULO */
+
+.title{
+  text-align: center;
+
+  font-size: clamp(40px, 5vw, 70px);
+
+  color: rgb(255, 165, 0);
+
+  margin-bottom: 25px;
+
+  font-family: 'MinhaGrafite', sans-serif;
+
+  letter-spacing: 2px;
+}
+
+/* TEXTO */
+
+.description{
+  max-width: 1000px;
+
+  margin: auto;
+
+  text-align: center;
+
+  line-height: 1.9;
+
+  font-size: 18px;
+
+  margin-bottom: 50px;
+}
+
+/* GRID DOS CARDS */
+
+.row{
+  justify-content: center;
+}
+
+/* CARD */
+
+.car-card{
+  background: white;
+
+  border-radius: 28px;
 
   overflow: hidden;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: 0.4s;
 
-  transition: 0.3s;
+  height: 100%;
 
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.15),
+  0 4px 10px rgba(0,0,0,0.08);
+
+  border: 4px solid rgba(255,255,255,0.7);
+}
+
+.car-card:hover{
+  transform: translateY(-10px);
+
+  box-shadow:
+  0 18px 35px rgba(0,0,0,0.22),
+  0 10px 18px rgba(0,0,0,0.12);
+}
+
+/* IMAGENS */
+
+.carousel-item img{
   width: 100%;
 
-  min-height: 500px;
-   
-}
-
-
-.car-card:hover {
-  transform: scale(1.03);
-}
-
-.car-card img {
-width: 100%;
-
-  height: 400px;
+  height: 270px;
 
   object-fit: cover;
 }
 
-.car-title {
-  font-family: 'MinhaGrafite', sans-serif;
+/* TITULO CARD */
+
+.car-title{
   text-align: center;
-  padding: 10px;
-  font-size: 38px;
-  font-weight: bold;
-  color:rgb(255, 165, 0);
-  background: rgb(255, 255, 255);
+
+  padding: 22px;
+
+  font-size: clamp(24px, 3vw, 38px);
+
+  color: rgb(255, 165, 0);
+
+  font-family: 'MinhaGrafite', sans-serif;
+
+  background: white;
+}
+
+/* BOTÕES DO CARROSSEL */
+
+.carousel-control-prev,
+.carousel-control-next{
+  width: 12%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-color: rgba(0,0,0,0.35);
+
+  border-radius: 50%;
+
+  padding: 18px;
+}
+
+/* CANVAS */
+
+canvas{
+  width: 95% !important;
+
+  max-width: 1200px;
+
+  height: auto !important;
+
+  display: block;
+
+  margin: 50px auto;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 992px){
+
+  .sobre{
+    padding: 35px;
+  }
+
+  .carousel-item img{
+    height: 240px;
+  }
+
+}
+
+@media(max-width: 768px){
+
+  .header{
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .menu{
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .sobre{
+    width: 95%;
+
+    padding: 28px;
+  }
+
+  .description{
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width: 480px){
+
+  .menu{
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .menu li{
+    width: 100%;
+  }
+
+  .menu li a{
+    display: block;
+
+    text-align: center;
+  }
+
+  .carousel-item img{
+    height: 220px;
+  }
+
+  .car-title{
+    font-size: 30px;
+  }
+
 }
