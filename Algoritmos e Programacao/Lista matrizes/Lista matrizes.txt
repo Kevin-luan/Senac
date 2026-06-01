@@ -1,0 +1,15 @@
+Lista matrizes
+1 - Crie uma matriz 3x3 de números inteiros, associe o valor 9 ao elemento central desta matriz. Exiba a matriz na tela de forma adequada.
+2 - Crie uma matriz 10x10. Atribua o número 8 a todos os elementos da matriz. Atribua então o número 0 a um elemento randômico da matriz. Exiba a matriz na tela.
+3 - Crie uma matriz 20 x 20 de inteiros. Preencha com números aleatórios entre 10 e 99. Exiba então a soma dos valores de todas as linhas desta matriz, e informe qual linha possui o maior valor.
+4 - Utilizando a mesma matriz, exiba a soma dos elementos da diagonal principal.
+
+5 - Desafio JEDI MASTER ADVANCED PLUS II:
+Crie uma matriz 10x10 de caracteres e preencha com zeros. Atribua um número 5 ao elemento 5,5.
+Solicite que o usuário digite um dos seguintes comandos:
+2 - baixo,
+4 - esquerda,
+6 - direita,
+0 - sair.
+estes comandos de direção fazem número 5 se mover pela matriz.
+O programa se repete até que seja digitado 0 para sair.
