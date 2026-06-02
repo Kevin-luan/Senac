@@ -2,20 +2,34 @@
 <html lang="pt-BR">
 
 <head>
+
+  <!-- Configuração de caracteres -->
   <meta charset="UTF-8">
+
+  <!-- Responsividade -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título da página -->
   <title>Maranhao</title>
 
+  <!-- Biblioteca p5.js -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
 
+  <!-- CSS próprio -->
   <link rel="stylesheet" href="maranhao.css">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
+<!-- HEADER -->
 <header class="header">
+
+  <!-- Logo -->
   <img src="icon/icon.ico" alt="Descrição do Ícone" width="90" height="80">
 
-
+  <!-- Menu -->
   <nav>
     <ul class="menu">
       <li><a href="#Canvas">Canvas</a></li>
@@ -23,40 +37,43 @@
       <li><a href="#sobre">Sobre</a></li>
     </ul>
   </nav>
+
 </header>
 
 <body class="body">
 
-  <section class="sobre" >
+  <!-- Seção sobre o Maranhão -->
+  <section class="sobre">
+
     <h1 class="title">Maranhão</h1>
-    <p class="description">O Maranhão é um estado brasileiro localizado na região Nordeste do país. Conhecido por sua
-      rica cultura, diversidade natural e história fascinante, o Maranhão é um destino turístico popular. O estado é
-      famoso por suas praias paradisíacas, como a Praia dos Lençóis Maranhenses, onde dunas de areia branca se encontram
-      com lagoas de água cristalina. Além disso, o Maranhão possui uma culinária única, influenciada pela mistura de
-      culturas indígenas, africanas e portuguesas, com pratos típicos como o arroz de cuxá e o guaraná Jesus. A capital
-      do estado é São Luís, uma cidade histórica com arquitetura colonial e um vibrante cenário cultural.</p>
 
-
+    <p class="description">
+      O Maranhão é um estado brasileiro localizado na região Nordeste...
+    </p>
 
   </section>
 
-
-
+  <!-- Container dos cards -->
   <div class="container py-4">
+
     <div class="row g-4">
 
-      <!-- carrosel para as img dos lecois maranheses  -->
+      <!-- CARD DOS LENÇÓIS -->
       <div class="col-md-6 col-lg-3">
+
         <div class="car-card">
 
+          <!-- Carrossel -->
           <div id="lecoisMaranheses" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-inner">
 
+              <!-- Imagem ativa -->
               <div class="carousel-item active">
                 <img src="img/lencoisMaranhao/lencois01.avif">
               </div>
 
+              <!-- Outras imagens -->
               <div class="carousel-item">
                 <img src="img/lencoisMaranhao/lencois02.avif">
               </div>
@@ -67,26 +84,38 @@
 
             </div>
 
-            <!-- SETAS -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaFerrari"
+            <!-- Botão voltar -->
+            <button class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselLaFerrari"
               data-bs-slide="prev">
+
               <span class="carousel-control-prev-icon"></span>
+
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselLaFerrari"
+            <!-- Botão próximo -->
+            <button class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselLaFerrari"
               data-bs-slide="next">
+
               <span class="carousel-control-next-icon"></span>
+
             </button>
 
           </div>
 
+          <!-- Título do card -->
           <div class="car-title">Lecois Maranheses</div>
+
         </div>
+
       </div>
 
-
-      <!-- Comidas -->
+      <!-- CARD COMIDAS -->
       <div class="col-md-6 col-lg-3">
+
         <div class="car-card">
 
           <div id="comidas" class="carousel slide" data-bs-ride="carousel">
@@ -107,32 +136,24 @@
 
             </div>
 
-            <!-- SETAS -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPuroSangue"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPuroSangue"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-
           </div>
 
-          <div class="car-title">Comidas tipicas </div>
+          <div class="car-title">Comidas típicas</div>
+
         </div>
+
       </div>
 
     </div>
 
+  </div>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<!-- Seu JS -->
 <script src="maranhao.js"></script>
 
 </html>
