@@ -255,7 +255,7 @@ function draw() {
    
      setTimeout(() => {
 
-    window.location.href = "teste.html";
+    window.location.href = "amazonas.html";
 
   }, 10000);
    
