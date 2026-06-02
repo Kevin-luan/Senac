@@ -14,6 +14,11 @@ let nadar;
 // Imagem da nuvem
 let nuvem;
 
+// imagem par a plca para ir pra outra cidade 
+
+let placa1;
+ let con=0;
+
 
 // =====================================================
 // CONTROLE DA ANIMAÇÃO
@@ -62,6 +67,9 @@ function preload() {
 
   nuvem = loadImage('img/imgParaCanva/nuvem.png');
 
+
+  placa1 = loadImage('img/imgParaCanva/placa1.png');
+
 }
 
 
@@ -86,15 +94,14 @@ function mouseClicked() {
   // VELOCIDADE
   // =========================
 
-  if (mouseX < 250) {
+  if (
+  mouseX > 30 && mouseX < 180 &&
+  mouseY > 300 && mouseY < 400
+) {
 
-    condicao = true;
+  condicao = true;
 
-  } else if (mouseX > 250) {
-
-    condicao = false;
-
-  }
+}
 
 
   // =========================
@@ -209,6 +216,12 @@ function draw() {
   fill(245, 222, 179);
 
   rect(0, 300, 800, 100);
+    image(placa1, 30, 300, 150, 100);
+    fill(255);
+    textSize(20);
+
+     text("proxima\nCidade", 65, 330);
+    
 
 
   // =========================
@@ -237,13 +250,19 @@ function draw() {
   // VELOCIDADE DA RUA
   // =========================
 
-  if (condicao == false) {
+  if (condicao == true) {
+    x += 10;
+   
+     setTimeout(() => {
 
-    x += 3;
+    window.location.href = "teste.html";
+
+  }, 10000);
+   
 
   } else {
 
-    x += 10;
+ x += 3;
 
   }
 
