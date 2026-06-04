@@ -6,7 +6,8 @@ let placa1;
 let visitarFloresta = false;
 
 let folha1, folha2, folha3, folha4, folha5;
-let folhas = [];
+let chuva = [];
+let onca,cobra,macaco,arara;
 
 function mouseClicked() {
 
@@ -39,6 +40,10 @@ function preload() {
     arvore = loadImage('img/imgParaCanva/arvore.png');
     carro = loadImage('GIF/carro.gif');
     placa1 = loadImage('img/imgParaCanva/placa1.png');
+    onca = loadImage('img/imgParaCanva/onca.png')
+     macaco = loadImage('img/imgParaCanva/macaco.png')
+      arara = loadImage('img/imgParaCanva/arara.png')
+       cobra = loadImage('img/imgParaCanva/cobra.png')
 
     folha1 = loadImage('img/imgParaCanva/folha1.png');
     folha2 = loadImage('img/imgParaCanva/folha2.png');
@@ -49,6 +54,20 @@ function preload() {
 
 function setup() {
     createCanvas(800, 600);
+    for(let i = 0 ; i < 100; i++)
+
+  {
+
+    chuva[i] = [];
+
+    chuva[i][0] = random(width);
+
+    chuva[i][1] = random(height);
+
+    chuva[i][2] = random(1, 5);
+
+ 
+  }
 }
 
 function draw() {
@@ -77,6 +96,11 @@ function draw() {
         textSize(25);
         text("Voltar", 150, 550);
 
+        image(onca, 170, 280, 90, 160);
+        image(cobra, 470, 280, 90, 100);
+        image(arara, 570, 380, 90, 70);
+        image(macaco, 570, 480, 90, 160);
+
         // árvores da floresta
         image(arvore, 120, 380, 90, 160);
         image(arvore, 20, 420, 110, 300);
@@ -85,31 +109,34 @@ function draw() {
         image(arvore, 400, 490, 95, 280);
         image(arvore, 600, 430, 40, 80);
 
-        // criação de folhas
-        if (frameCount % 5 === 0) {
-            folhas.push({
-                x: random(0, 800),
-                y: 200,
-                tipo: floor(random(1, 6))
-            });
-        }
+         for (let i = 0 ; i < 100; i++)
 
-        // movimento das folhas
-        for (let i = 0; i < folhas.length; i++) {
-            let f = folhas[i];
-            f.y += 1;
+  {
 
-            if (f.tipo == 1) image(folha1, f.x, f.y, 80, 80);
-            if (f.tipo == 2) image(folha2, f.x, f.y, 80, 80);
-            if (f.tipo == 3) image(folha3, f.x, f.y, 80, 80);
-            if (f.tipo == 4) image(folha4, f.x, f.y, 80, 80);
-            if (f.tipo == 5) image(folha5, f.x, f.y, 80, 80);
-        }
+    let vel = map(chuva[i][2], 1, 5, 1, 3);
 
-        // limite de folhas
-        if (folhas.length > 200) {
-            folhas.shift();
-        }
+    let esp = map(chuva[i][2], 1, 5, 0.5, 2.5);  
+
+    let tam = map(chuva[i][2], 1, 5, 4, 12);
+
+    strokeWeight(esp);
+
+     image(folha1, chuva[i][0], chuva[i][1], tam * 5, tam * 5);
+    //circle[i][0]
+
+    chuva[i][1] += vel;
+
+      if (chuva[i][1] > height){
+
+        chuva[i][1] = random(-30, -5);
+
+      }
+
+  }
+    
+        
+
+       
 
         return;
     }
