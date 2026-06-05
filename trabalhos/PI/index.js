@@ -52,28 +52,56 @@ function draw() {
 
     fill(40, 250, 250);
 
-    rect(200, 450, 50, 70);
 
-    stroke(255, 255, 255);
-    line(225, 450, 225, 425);
-    fill(0, 0, 0);
-    circle(225, 420, 40);
 
-    rect(225, 520, 20, 40);
-    rect(205, 520, 20, 40);
 
-    rect(255, 450, 20, 40);
-    rect(175, 450, 20, 40);
 
-    rect(255, 530, 30, 40);
-    strokeWeight(5);
-    line(265, 530, 265, 490);
-    strokeWeight(1);
 
-    circle(260, 575, 10);
-    circle(280, 575, 10);
 
-    text("Vamos conhecer alguns Estados do Brasil", 300, 100);
+
+
+
+
+
+   let x = mouseX;
+  let y = mouseY;
+
+  // Corpo
+  rect(x - 25, y, 50, 70);
+
+  // Pescoço
+  stroke(255);
+  line(x, y, x, y - 25);
+
+  // Cabeça
+  fill(0);
+  circle(x, y - 30, 40);
+
+  // Pernas
+  rect(x, y + 70, 20, 40);
+  rect(x - 20, y + 70, 20, 40);
+
+  // Braços
+  rect(x + 30, y, 20, 40);
+  rect(x - 50, y, 20, 40);
+
+  // Arma / acessório
+  rect(x + 30, y + 80, 30, 40);
+
+  strokeWeight(5);
+  line(x + 40, y + 80, x + 40, y + 40);
+  strokeWeight(1);
+
+  // Rodinhas / detalhes
+  circle(x + 35, y + 125, 10);
+  circle(x + 55, y + 125, 10);
+
+
+
+
+
+  
+    text("Vamos conhecer alguns Estados do Brasil", 300, 50);
 
 
     image(placa1, 30, 400, 180, 100);
@@ -84,7 +112,7 @@ function draw() {
 
     if (mouseX > 30 && mouseX < 210 && mouseY > 400 && mouseY < 500) {
 
-        text("Mouse em cima da placa!", 300, 100);
+        text("Maranhao", 300, 100);
         setTimeout(() => {
 
             window.location.href = "maranhao.html";
@@ -107,7 +135,7 @@ function draw() {
     text("   Rio de janeiro\n    140Km", 730, 430);
   if (mouseX > 700 && mouseX < 920 && mouseY > 400 && mouseY < 500) {
 
-    text("Mouse em cima da placa!", 300, 100);
+    text("Rj", 300, 100);
 
       setTimeout(() => {
 
