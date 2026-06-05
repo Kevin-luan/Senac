@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+
+
+header{
+    background:red;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:black;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:15px;
+    padding:8px 15px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.15);
+    transition:0.3s;
+}
+
+nav a:hover{
+    background: red;
+}
+
+
+
+.hero{
+    height:80vh;
+    background:url("https://naoesqueci.com.br/wp-content/uploads/2022/12/Pontos-turisticos-de-Minas-Gerais-1536x1025.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+}
+
+.hero h2{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:1.2rem;
+    margin:auto;
+}
+
+
+
+.cards{
+    padding:50px;
+    background:red;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    line-height:1.6;
+}
+
+
+footer{
+    background:255 ;
+    text-align:center;
+    padding:20px;
+}

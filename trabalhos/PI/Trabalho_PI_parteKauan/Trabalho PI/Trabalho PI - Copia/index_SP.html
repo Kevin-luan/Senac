@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Pagina P5_SP</title>
+
+  <link rel="stylesheet" href="Style_SP.css" />
+
+  <style>
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- HEADER -->
+  <header class="bg-black text-white text-center py-5 border-bottom border-white border-opacity-10">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-2">SÃO PAULO</h1>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container py-5">
+
+    <!-- SOBRE -->
+    <section class="mb-5">
+      <div class="card bg-black bg-opacity-75 border border-white border-opacity-10 shadow-sm">
+        <div class="card-body">
+          <h2 class="h3 text-black mb-3">Um pouco sobre São Paulo</h2>
+          <p class="lead text-black mb-0" style="color: #000;">São Paulo é uma cidade vibrante e cheia de contrastes, onde o moderno e o tradicional convivem lado a lado. Conhecida como o coração financeiro do Brasil, ela também se destaca pela sua diversidade cultural, refletida na gastronomia, na arte e nas pessoas que vêm de todas as partes do mundo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARROSSEL -->
+    <section class="mb-5">
+      <div class="card bg-black border border-white border-opacity-10 shadow-sm overflow-hidden">
+        <div class="card-body p-0">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Catedral.jpg" class="d-block w-100" alt="Catedral">
+                <div class="carousel-caption d-block text-start">
+                  <h5>Catedral da Sé</h5>
+                  <p>A Catedral da Sé, no centro de São Paulo, é um cartão-postal neogótico com vitrais e cúpula marcantes.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Virado_a_paulista.jpg" class="d-block w-100" alt="Virado a Paulista">
+                <div class="carousel-caption d-block text-start">
+                  <h5>Virado a Paulista</h5>
+                  <p>O virado à paulista é um prato típico da culinária de São Paulo, muito apreciado por sua tradição e sabor. Originado no período colonial, ele costuma reunir ingredientes como arroz, feijão, bisteca de porco, linguiça, couve refogada, torresmo e ovo frito. Tradicionalmente servido às segundas-feiras em muitos restaurantes da cidade, o prato representa a mistura de influências culturais que formam a identidade paulista, sendo uma refeição completa, rica e cheia de história.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="mercadaosp.jpg" class="d-block w-100" alt="Mercado SP">
+                <div class="carousel-caption d-block text-start">
+                  <h5>Mercado Municipal (Mercadão)</h5>
+                  <p>O Mercadão encanta com sua arquitetura, vitrais e sabores como o famoso sanduíche de mortadela.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- P5 Canvas -->
+    <section class="mb-5">
+      <div class="card bg-black bg-opacity-75 border border-white border-opacity-10 shadow-sm">
+        <div class="card-body">
+          <div id="canvas-container"></div>
+        </div>
+      </div>
+    </section>
+
+  
+
+  </main>
+
+  <!-- FOOTER REMOVIDO -->
+
+  <!-- ✅ Bootstrap JS corrigido (ESSENCIAL) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- p5.js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
+
+  <!-- Seu JS -->
+  <script src="sketch_SP.js"></script>
+
+</body>
+</html>
