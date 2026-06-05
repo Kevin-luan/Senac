@@ -17,7 +17,7 @@ let nuvem;
 // imagem par a plca para ir pra outra cidade 
 
 let placa1;
- let con=0;
+let con = 0;
 
 
 // =====================================================
@@ -95,13 +95,13 @@ function mouseClicked() {
   // =========================
 
   if (
-  mouseX > 30 && mouseX < 180 &&
-  mouseY > 300 && mouseY < 400
-) {
+    mouseX > 30 && mouseX < 180 &&
+    mouseY > 300 && mouseY < 400
+  ) {
 
-  condicao = true;
+    condicao = true;
 
-}
+  }
 
 
   // =========================
@@ -216,12 +216,12 @@ function draw() {
   fill(245, 222, 179);
 
   rect(0, 300, 800, 100);
-    image(placa1, 30, 300, 150, 100);
-    fill(255);
-    textSize(20);
+  image(placa1, 30, 300, 180, 100);
+  fill(255);
+  textSize(20);
 
-     text("proxima\nCidade", 65, 330);
-    
+  text("Amazonas", 65, 330);
+
 
 
   // =========================
@@ -252,18 +252,34 @@ function draw() {
 
   if (condicao == true) {
     x += 10;
-   
-     setTimeout(() => {
 
-    window.location.href = "amazonas.html";
+    setTimeout(() => {
 
-  }, 10000);
-   
+      window.location.href = "amazonas.html";
+
+    }, 10000);
+
 
   } else {
 
- x += 3;
+    x += 3;
 
+  }
+
+  image(placa1, 30, 500, 180, 100);
+
+  fill(255);
+  textSize(20);
+
+  text("   Bahia", 65, 550);
+
+  if (mouseX > 30 && mouseX < 210 && mouseY > 500 && mouseY < 600) {
+
+    text("Mouse em cima da placa!", 300, 100);
+    setTimeout(() => {
+      window.location.href = "/Trabalho_PI_parteKauan/Trabalho%20PI/Trabalho%20PI/pagina_BA.html";
+    }, 5000);
+    x += 10;
   }
 
 

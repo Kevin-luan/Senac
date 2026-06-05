@@ -50,8 +50,7 @@ function mousePressed() {
 
     text("Mouse em cima da placa!", 400, 100);
 
-
-    window.location.href = "PI/Trabalho_PI_parteKauan/Trabalho%20PI/Trabalho%20PI/index_SP.html";
+window.location.href = "/Trabalho_PI_parteKauan/Trabalho%20PI/Trabalho%20PI/index_SP.html";
 
 
   }
