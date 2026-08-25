@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kevin\\Documents\\Estudos\\Senac\\Algoritmos e Programacao\\Segundo semestre\\Lista01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{401F0110-FACE-47B5-9842-738AD1B794DF}|Lista01\\Lista01.vcxproj|C:\\Users\\Kevin\\Documents\\Estudos\\Senac\\Algoritmos e Programacao\\Segundo semestre\\Lista01\\Lista01\\exe2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{401F0110-FACE-47B5-9842-738AD1B794DF}|Lista01\\Lista01.vcxproj|solutionrelative:Lista01\\exe2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "exe2.c",
+              "DocumentMoniker": "C:\\Users\\Kevin\\Documents\\Estudos\\Senac\\Algoritmos e Programacao\\Segundo semestre\\Lista01\\Lista01\\exe2.c",
+              "RelativeDocumentMoniker": "Lista01\\exe2.c",
+              "ToolTip": "C:\\Users\\Kevin\\Documents\\Estudos\\Senac\\Algoritmos e Programacao\\Segundo semestre\\Lista01\\Lista01\\exe2.c",
+              "RelativeToolTip": "Lista01\\exe2.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-08-14T17:58:51.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
