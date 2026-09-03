@@ -1,0 +1,6 @@
+﻿  exe05.c
+C:\Users\Kevin\Documents\Estudos\Senac\Algoritmos e Programacao\Segundo semestre\Lista02\exe05\exe05\exe05\exe05.c(13,9): warning C4477: 'printf': a cadeia de formato '%x' requer um argumento do tipo 'unsigned int', mas um argumento variadic 1 tem o tipo 'int *'
+C:\Users\Kevin\Documents\Estudos\Senac\Algoritmos e Programacao\Segundo semestre\Lista02\exe05\exe05\exe05\exe05.c(13,9): warning C4313: 'printf': '%x' na cadeia de formato está em conflito com o argumento 1 do tipo 'int *'
+C:\Users\Kevin\Documents\Estudos\Senac\Algoritmos e Programacao\Segundo semestre\Lista02\exe05\exe05\exe05\exe05.c(15,9): warning C4477: 'printf': a cadeia de formato '%x' requer um argumento do tipo 'unsigned int', mas um argumento variadic 1 tem o tipo 'int *'
+C:\Users\Kevin\Documents\Estudos\Senac\Algoritmos e Programacao\Segundo semestre\Lista02\exe05\exe05\exe05\exe05.c(15,9): warning C4313: 'printf': '%x' na cadeia de formato está em conflito com o argumento 1 do tipo 'int *'
+  exe05.vcxproj -> C:\Users\Kevin\Documents\Estudos\Senac\Algoritmos e Programacao\Segundo semestre\Lista02\exe05\exe05\x64\Debug\exe05.exe
