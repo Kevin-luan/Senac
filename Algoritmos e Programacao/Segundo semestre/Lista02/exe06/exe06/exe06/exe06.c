@@ -7,7 +7,7 @@ int n1 = 77;
 int *ptrN1 = &n1;
 
 void endereco(int *ptrN1) {
-	*ptrN1 =20;
+	*ptrN1 =60;
 
 	printf("O valor : %d\n", n1);
 	
