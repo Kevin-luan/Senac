@@ -1,0 +1,5 @@
+﻿  exe05.c
+C:\Users\NotSuporteAe\Documents\Senac\Algoritmos e Programacao\Segundo semestre\Lista03\exe05\exe05\exe05.c(6,3): warning C4098: 'ler': função 'void' retornando um valor
+C:\Users\NotSuporteAe\Documents\Senac\Algoritmos e Programacao\Segundo semestre\Lista03\exe05\exe05\exe05.c(17,3): warning C4098: 'lerinvertido': função 'void' retornando um valor
+C:\Users\NotSuporteAe\Documents\Senac\Algoritmos e Programacao\Segundo semestre\Lista03\exe05\exe05\exe05.c(25,2): warning C4098: 'lerinvertido': função 'void' retornando um valor
+  exe05.vcxproj -> C:\Users\NotSuporteAe\Documents\Senac\Algoritmos e Programacao\Segundo semestre\Lista03\exe05\x64\Debug\exe05.exe
