@@ -1,0 +1,3 @@
+﻿  exe11.c
+C:\Users\NotSuporteAe\Documents\Senac\Algoritmos e Programacao\Segundo semestre\Lista03\exe11\exe11\exe11.c(10,3): warning C4098: 'binario': função 'void' retornando um valor
+  exe11.vcxproj -> C:\Users\NotSuporteAe\Documents\Senac\Algoritmos e Programacao\Segundo semestre\Lista03\exe11\x64\Debug\exe11.exe
