@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Insertion Sort/Insertion Sort.vcxproj" Id="1c9c218a-ebb8-41e8-8a1f-85e881b240de" />
+</Solution>
