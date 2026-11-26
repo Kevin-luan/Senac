@@ -3,7 +3,7 @@
 #define Max 5
 int pilha[Max];
 int topo = -1;
-int valor;
+
 
 int isEmpy(int pilha[]) {
 	if (topo < 0) {
@@ -25,7 +25,7 @@ void push(int valor) {
 
 int  pop() {
 	if (topo < 0) {
-		printf("Fila vazia \n");
+		printf("Pila vazia \n");
 		return -1;
 	}
 	int valor = pilha[topo];
@@ -45,12 +45,16 @@ int peek() {
 int main() {
 
 	push(10);
-	printf("topo da lista %d \n", peek());
+	printf("topo da Pista %d \n", peek());
 	push(14);
 
 	printf("Valor que foi removido %d \n", pop());
 
-	printf("topo da lista %d \n", peek());
+	printf("topo da Pista %d \n", peek());
+	push(134);
+	push(110);
+	printf("tamanha da plilha %d\n",size());
+	
 
 
 	return 0;
